@@ -19,6 +19,6 @@ foreach ($User in $AllUsers) {
 	}
 }
 
-#Display RemotePowerSthell State
+#Display RemotePowerShell State
 $RemotePowerShellState = get-mailbox -resultsize Unlimited | Get-User -ResultSize Unlimited | select SamAccountName,RemotePowerShellEnabled
 $RemotePowerShellState
